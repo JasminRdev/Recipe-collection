@@ -1,0 +1,20 @@
+#apiData p{
+    border:red solid 1px;
+}
+
+.mainHeader nav ul{
+    display: flex;
+    
+}
+
+.mainHeader nav ul>*{
+    border: 1px solid red;
+    margin: 0.3rem;
+}
+
+.mainHeader{
+    display: flex;
+    border: 1px green solid;
+    padding: 1rem 30rem;
+    justify-content: space-between;
+}
