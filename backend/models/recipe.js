@@ -13,7 +13,7 @@ const recipeSchema = new mongoose.Schema({
     description: {type: String, required: true, unique: true},
     ingredients: {type: [String], required: true},
     oftenness: {type: Number, default: 1},
-    stars: {type: Number, min: 0, max:10, required: true},
+    stars: {type: Number, min: 0, max:5, required: true},
     onPlanningList: {type: Boolean, required: true},
     timeConsuming: {type: String, enum: ["Very fast", "Fast", "Middle", "Long"], required: true},
     mealTimes: {type: [String], enum:["Breakfast", "Lunch", "Dinner", "Snack"], validate: enumValidator, required: true},

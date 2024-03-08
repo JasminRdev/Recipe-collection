@@ -82,15 +82,15 @@ const Recipe = require('./models/recipe')
 //add 
 
 // const newRecipe = new Recipe({
-//     title: "Tuna Baguettes",
-//     description: "30 min, 200° / Low Carb Tuna Snack mal anders",
-//     ingredients: ["Tuna", "Körningen Frischkäse(200g)", "Eggs(2)", "Light Cheese (100g)", "optional Onion(1)"],
+//     title: "Apple pie",
+//     description: "40 min, 180° mostly apples",
+//     ingredients: ["5 apples", "130g flour", "2 eggs", "100ml milk", "30g sugar", "30g oil"],
 //     oftenness: 1,
-//     stars: 10,
+//     stars: 7,
 //     onPlanningList: false,
-//     timeConsuming: "Fast",
+//     timeConsuming: "Middle",
 //     mealTimes: ["Snack"],
-//     nutritionScore: "Healthy"
+//     nutritionScore: "Normal"
 // })
 
 // newRecipe.save()
@@ -105,19 +105,19 @@ const Recipe = require('./models/recipe')
 //edit 
 
 // Recipe.findOneAndUpdate(
-//     {_id: "65e07ffcbc302eb427f96a50"},
-//     {$set: {oftenness: 2}},
+//     {_id: "65e08450d098ee8fa7b6af52"},
+//     {$set: {stars: 4}},
 //     {new: true}
 //     )
-//     .thn(updatedRecipe => {
+//     .then(updatedRecipe => {
 //         console.log("Updated recipe: ", updatedRecipe);
 //     })
 //     .catch((error) => {
 //         console.error('Error updating recipe: ', error);
 //     })
 
-
-
+    
+        
 //del
 
 // Recipe.findOneAndDelete({_id: "65e07ffcbc302eb427f96a50"})
