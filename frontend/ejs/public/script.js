@@ -69,6 +69,7 @@ function fetchAll() {
     })
 }
 
+console.log("rebase test")
 
 
 function cleanUp() {
@@ -81,7 +82,6 @@ function cleanUp() {
         console.log(i, childEl);
     }
 } 
-
 
 
 const searchForm = document.getElementById("searchRecipes")
