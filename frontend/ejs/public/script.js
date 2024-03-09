@@ -83,6 +83,7 @@ function cleanUp() {
 } 
 
 
+console.log("some feature added")
 
 const searchForm = document.getElementById("searchRecipes")
 
