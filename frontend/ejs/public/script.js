@@ -56,6 +56,8 @@ function buildRecipeUp(recipeResult, recipeContainer){
 }
 
 function fetchAll() {
+    cleanUp();
+
     fetch("/api/recipes")
     .then(res => res.json())
     .then(recipes => {
@@ -81,7 +83,9 @@ function cleanUp() {
 } 
 
 
+
 const searchForm = document.getElementById("searchRecipes")
+
 searchForm.addEventListener("submit", function(event){
     event.preventDefault()
 
@@ -104,5 +108,6 @@ searchForm.addEventListener("submit", function(event){
 })
 
 
-
 fetchAll()
+
+
