@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
 
-    <script src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.styles.css"></link>
+    <script src="https://kit.fontawesome.com/b01234e4d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
         <section id="mainHeader" class="mainHeader">
-            <h1>Jasmin's Recipe Collection</h1>
+            <h1 class="headerTitle">Jasmin's recipe collection</h1>
             <nav>
                 <ul>
                     <li><a href="about" id="about">About</a></li>
@@ -19,12 +24,21 @@
                 </ul>
             </nav>
         </section>
-        <section id="secondaryHeader">
-            <form action="/submit" method="post">
-                <a>Show all Recipes</a>
+        <section id="secondaryHeader" class="secondaryHeader">
+            <form id="searchRecipes" class="searchRecipes" >
+                <a class="searchAll">Show all Recipes</a>
                 <input placeholder="Search for Recipes"/>
-
+                <select name="categories" id="category-select">
+                    <option value="All categories">All categories</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Snack">Snack</option>
+                </select>
+                <button type="submit" class="submitRecipeSearch">Submit</button>
             </form>
+            <nav>
+                <li><i class="fas fa-plus"></i><a href="addRecipe" id="addRecipe"> Add Recipe</a></li>
+            </nav>
                        
         </section>
         
